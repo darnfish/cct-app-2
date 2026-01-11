@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Decider</title>
+    <title>~*~ Dinner Decider ~*~</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="marquee-container" style="background: black; color: yellow; font-family: monospace; border: 2px solid white; margin-bottom: 10px;">
+        <marquee scrollamount="5">Welcome to the BEST Dinner Decider on the World Wide Web!!! *** Sign my Guestbook! *** Updated: Jan 11, 2026 ***</marquee>
+    </div>
+
     <div class="container">
         <header>
-            <h1>What's for Dinner?</h1>
+            <h1><span style="font-size: 50px;">🍕</span> What's for Dinner? <span style="font-size: 50px;">🌮</span></h1>
+            <img src="https://web.archive.org/web/20090830005423/http://geocities.com/clipart/pbi/hrules/Generic/rainbow.gif" alt="rainbow line" style="width: 100%; height: 5px; margin: 10px 0; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">
             <p>Can't decide? Let us choose for you!</p>
+            <br>
+            <span style="background: yellow; color: red; padding: 2px; border: 1px solid black; font-weight: bold;">HOT!</span>
+            <span style="background: red; color: yellow; padding: 2px; border: 1px solid black; font-weight: bold;">NEW!</span>
+            <span style="background: lime; color: black; padding: 2px; border: 1px solid black; font-weight: bold;">COOL!</span>
         </header>
 
         <main>
             <div id="result-container" class="hidden">
-                <h2>You should eat:</h2>
+                <h2>*** You should eat ***</h2>
                 <div id="result-display"></div>
                 <button id="retry-btn">Spin Again</button>
             </div>
@@ -24,17 +33,32 @@
                 <button id="decide-btn" class="primary-btn">Decide for Me!</button>
             </div>
 
-            <section id="options-section">
-                <h3>Your Options</h3>
-                <ul id="options-list">
-                    <!-- Options will be populated here -->
-                </ul>
-                <div class="add-option">
-                    <input type="text" id="new-option-input" placeholder="Add a meal option...">
-                    <button id="add-option-btn">Add</button>
+            <center>
+                <div style="border: 4px groove white; padding: 10px; width: 80%; background-color: #008080;">
+                    <section id="options-section">
+                        <h3>Your Options</h3>
+                        <ul id="options-list">
+                            <!-- Options will be populated here -->
+                        </ul>
+                        <div class="add-option">
+                            <input type="text" id="new-option-input" placeholder="Add a meal option...">
+                            <button id="add-option-btn">Add</button>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </center>
         </main>
+
+        <br><br>
+        <img src="https://web.archive.org/web/20090829175314/http://geocities.com/clipart/pbi/hrules/Generic/construction.gif" alt="construction line" style="width: 100%; height: 5px; background: yellow; border-top: 2px dashed black; border-bottom: 2px dashed black; height: 10px;">
+        
+        <footer>
+            <p>You are visitor number:</p>
+            <div class="counter">0 1 3 3 7</div>
+            <p style="font-size: small; color: silver;">Best viewed in Netscape Navigator 4.0</p>
+            <p style="font-size: small;">&copy; 1999-2026</p>
+            <a href="mailto:webmaster@example.com">Email Me!</a>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>

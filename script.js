@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add a simple animation effect
         resultContainer.classList.remove('hidden');
-        resultDisplay.textContent = "Thinking...";
+        resultDisplay.textContent = "Loading...";
         
         let counter = 0;
-        const maxCount = 10;
+        const maxCount = 20;
         const interval = setInterval(() => {
             const randomIndex = Math.floor(Math.random() * options.length);
             resultDisplay.textContent = options[randomIndex];
@@ -84,7 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Final pick
                 const finalIndex = Math.floor(Math.random() * options.length);
                 resultDisplay.textContent = options[finalIndex];
+                // Blink effect for the winner
+                resultDisplay.style.color = 'red';
+                setTimeout(() => resultDisplay.style.color = 'lime', 200);
             }
-        }, 100);
+        }, 150);
     }
 });
