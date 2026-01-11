@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Decider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What's for Dinner?</h1>
+            <p>Can't decide? Let us choose for you!</p>
+        </header>
+
+        <main>
+            <div id="result-container" class="hidden">
+                <h2>You should eat:</h2>
+                <div id="result-display"></div>
+                <button id="retry-btn">Spin Again</button>
+            </div>
+
+            <div id="controls">
+                <button id="decide-btn" class="primary-btn">Decide for Me!</button>
+            </div>
+
+            <section id="options-section">
+                <h3>Your Options</h3>
+                <ul id="options-list">
+                    <!-- Options will be populated here -->
+                </ul>
+                <div class="add-option">
+                    <input type="text" id="new-option-input" placeholder="Add a meal option...">
+                    <button id="add-option-btn">Add</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
