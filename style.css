@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --background-color: #f7f9fc;
+    --text-color: #2d3436;
+    --card-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.1s ease, background-color 0.2s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.primary-btn:hover {
+    background-color: #ff5252;
+}
+
+#result-container {
+    background-color: #ffeaa7;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 1rem 0;
+}
+
+#retry-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#options-section {
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+#options-list {
+    list-style: none;
+    margin-bottom: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.option-item {
+    background-color: #f1f2f6;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: none;
+    color: #ff7675;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+.add-option {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#new-option-input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#add-option-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
